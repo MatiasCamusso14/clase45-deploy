@@ -10,6 +10,7 @@ export const createHash = async(password) =>{
 export const passwordValidation = async(user,password) => bcrypt.compare(password,user.password);
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+let __dirname = dirname(__filename);
+__dirname = dirname(__dirname);
 
 export default __dirname;

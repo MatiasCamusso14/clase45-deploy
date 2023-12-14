@@ -3,7 +3,7 @@ import petModel from "./models/Pet.js";
 export default class Pet {
 
     get = (params) =>{
-        return petModel.find(params)
+        return petModel.find(params).lean()
     }
 
     getBy = (params) =>{
